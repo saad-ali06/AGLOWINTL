@@ -1,0 +1,73 @@
+/* styles.css */
+
+/* Base font and smooth scrolling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 56px; /* Offset for fixed navbar */
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Hero section styling */
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('images/image4.webp') center/cover no-repeat;
+    color: #fff;
+    min-height: 60vh;
+    padding: 100px 0;
+  }
+  .hero h1,
+  .hero p {
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  }
+  
+  /* Ensure in-page links scroll to the right position (not hidden under nav) */
+  section[id] {
+    scroll-margin-top: 70px;
+  }
+  
+  /* Navbar color override (dark navy background) */
+  .bg-dark {
+    background-color: #003366 !important;
+  }
+  
+  /* Service card base style */
+  .service-card {
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  /* Service card hover effect */
+  .service-card:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section headers styling */
+  h2 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  /* Additional spacing for the services sections */
+  #services .row.g-4 {
+    margin-bottom: 2rem;
+  }
+  
+  /* Footer text and links styling */
+  footer h5 {
+    margin-bottom: 1rem;
+  }
+  footer p,
+  footer a {
+    font-size: 0.9rem;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
